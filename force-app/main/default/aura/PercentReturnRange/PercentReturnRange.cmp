@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <ltng:require styles="{!$Resource.nouislider1 + '/nouislider.css'}" 
+                  scripts="{!$Resource.nouislider1 + '/nouislider.js'}"
+                  afterScriptsLoaded="{!c.jsLoaded}" />
+
+	<aura:registerEvent name="returnRangeChange" type="c:ReturnRangeChange"/>
+
+    <aura:attribute name="label" type="String"/>
+    <aura:attribute name="filterName" type="String"/>
+    <aura:attribute name="min" type="String" default="0"/>
+    <aura:attribute name="max" type="String" default="1000"/>
+    <aura:attribute name="step" type="String" default="10"/>
+    
+    <div>
+        <div class="label">{!v.label}</div>
+	    <div aura:id="slider" class="slider"/>
+    </div>
+    
+</aura:component>

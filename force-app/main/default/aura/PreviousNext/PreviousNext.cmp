@@ -1,0 +1,18 @@
+<aura:component >
+    
+    <aura:attribute name="previous" type="Boolean" default="true"/>
+    <aura:attribute name="next" type="Boolean" default="true"/>
+    
+    <aura:registerEvent name="onPrevious" type="c:NavigationEvent"/>
+    <aura:registerEvent name="onNext" type="c:NavigationEvent"/>
+    
+    <div>
+        <aura:if isTrue="{!v.previous}">
+	        <lightning:button onclick="{!c.previousHandler}">Previous</lightning:button>
+        </aura:if>
+        <aura:if isTrue="{!v.next}">
+	        <lightning:button onclick="{!c.nextHandler}">Next</lightning:button>
+        </aura:if>            
+    </div>
+
+</aura:component>

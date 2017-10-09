@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <aura:registerEvent name="filterChange" type="c:FundFilterChange"/>
+
+    <lightning:card title="Filters" iconName="utility:feed">
+
+        <c:SearchBar onchange="{!c.searchKeyChangeHandler}"/>
+        <c:AssetClassSelector onchange="{!c.assetClassChangeHandler}"/>
+        <c:SectorSelector onchange="{!c.sectorChangeHandler}"/>
+
+    </lightning:card>
+    
+</aura:component>

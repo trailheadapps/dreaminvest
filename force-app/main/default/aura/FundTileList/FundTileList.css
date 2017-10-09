@@ -1,0 +1,14 @@
+.THIS {
+    position: relative;
+    /*
+    background-color: #FFFFFF;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(221, 219, 218);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.10);
+    padding: .25rem;
+    */
+}
+
+.THIS .slds-app-launcher__tile {
+    margin: 0 0 1rem 0;
+}

@@ -1,0 +1,8 @@
+.THIS {
+    border: none;
+    box-shadow: none;
+}
+
+.THIS .slds-card__body {
+	padding: 12px;
+}
