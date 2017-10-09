@@ -35,6 +35,8 @@ Read [this blog post](https://developer.salesforce.com/blogs/developer-relations
     sfdx force:org:open
     ```
 
+1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, and flip the toggle to hide background images in Lightning Experience.
+
 1. Load sample data (Sectors):
     - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
     - Click **Launch Wizard**.
