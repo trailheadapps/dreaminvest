@@ -1,4 +1,4 @@
-## DreamInvest Sample App
+# DreamInvest Sample App
 
 DreamInvest is a sample financial services application. It features a mutual fund selector that illustrates standard coding practices and solutions to common problems when building applications with the Lightning Component Framework.
 
