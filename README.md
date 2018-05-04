@@ -72,7 +72,7 @@ Creating a dropdown box from picklist values is a common requirement. Take a loo
 ![Picklist dropdown](docs/dropdown_picklist.png)
 
 ### Creating a dropdown box from a list of records
-Creating a dropdown box from a list of records is also a common requirement. Take a look at the [SectorSelector](force-app/main/default/aura/AssetClassSelector) component for an example. Like AssetClassSelector, SectorSelector uses the custom cache solution described previously to ensure that the list of sectors is only retrieved once from the server.
+Creating a dropdown box from a list of records is also a common requirement. Take a look at the [SectorSelector](force-app/main/default/aura/SectorClassSelector) component for an example. Like AssetClassSelector, SectorSelector uses the custom cache solution described previously to ensure that the list of sectors is only retrieved once from the server.
 
 ![Records dropdown](docs/dropdown_records.png)
 
@@ -82,7 +82,7 @@ When working with lists, letting events bubble, and registering a single event l
 ### Using application events
 Application events are used for coarse-grained application-level communication, such as communication between components added to pages in App Builder. For example, in the Mutual Fund Explorer:
 - The [FundFilter](force-app/main/default/aura/FundFilter) component fires the [FundFilterChange](force-app/main/default/aura/FundFilterChange) event to notify other components that the search parameters (searchKey, sector, asset class) have changed.
-- The [PercentReturnRange](force-app/main/default/aura/PercentReturnRange) component fires the [ReturnRangeChange](force-app/main/default/aura/ReturnRangeChange) event to notify other components that a range has changed. The PercentReturnRange component has a [design attribute](force-app/main/default/aura/PercentReturnRange.design) exposed in App Builder that lets you name the range so the listening component knows which range has changed. In the Mutual Fund Explorer page, the PercentReturnRange component is used three times to select a range for the following values: year-to-date return, one-year return, and five-year return.
+- The [PercentReturnRange](force-app/main/default/aura/PercentReturnRange) component fires the [ReturnRangeChange](force-app/main/default/aura/ReturnRangeChange) event to notify other components that a range has changed. The PercentReturnRange component has a [design attribute](force-app/main/default/aura/PercentReturnRange/PercentReturnRange.design) exposed in App Builder that lets you name the range so the listening component knows which range has changed. In the Mutual Fund Explorer page, the PercentReturnRange component is used three times to select a range for the following values: year-to-date return, one-year return, and five-year return.
 
 ### Using component events
 Component Events are used for finer grained child-to-parent communication. For example, in the Mutual Fund Explorer:
