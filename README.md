@@ -55,3 +55,67 @@ DreamInvest is a sample financial services application. It features a mutual fun
 1. In **App Launcher**, select the **DreamInvest** app
 
 1. Click the **Fund Explorer** tab
+
+## Code Highlights
+
+### Caching data with storable actions
+Storable actions make it easy to implement client-side data caching, which is one of the most impactful things you can do to improve the performance of your Lightning components. Check out the FundTileList component. A storable action is used to retrieve funds from the server and cache the response at the client-side. Read [this blog post](https://developer.salesforce.com/blogs/developer-relations/2017/03/lightning-components-best-practices-caching-data-storable-actions.html) for more information.
+
+### Caching data with a custom cache
+In addition to storable actions, you can also build your own custom cache solution. For example, for data that never (or rarely) changes, you can build a custom cache that retrieves the data from the server once, caches the response, and never goes back to the server. Check out the DataCache static resource (File > Open > Static Resource > Data Cache in the developer console) for an example. And then check out the SectorSelector and AssetClassSelector components to see how it’s used to cache the list of sectors and asset classes. Read the [Modularizing Code in Lightning Components blog post](https://developer.salesforce.com/blogs/developer-relations/2016/12/lightning-components-code-sharing.html) for more details, and for different strategies to implement a custom cache.
+
+### Creating a dropdown box from picklist values
+Creating a dropdown box from picklist values is a common requirement. Take a look at the AssetClassSelector component for an example. The AssetClassSelector also uses the custom cache solution described previously to ensure that picklist values are only retrieved once from the server.
+
+![alt text](docs/dropdown_picklist.png)
+
+### Creating a dropdown box from a list of records
+Creating a dropdown box from a list of records is also a common requirement. Take a look at the SectorSelector component for an example. Like AssetClassSelector, SectorSelector uses the custom cache solution described previously to ensure that the list of sectors is only retrieved once from the server.
+
+![alt text](docs/dropdown_records.png)
+
+### Event bubbling
+When working with lists, letting events bubble, and registering a single event listener on a parent element instead of a separate event listener on every list item can significantly reduce the number of event listeners in your application, which can have a positive impact on performance. Check out the **FundTileList** component, and see how a single onmousemove event listener is registered on the list element (```<ul>```) instead of a separate listener on every list item (```<li>```) (inside the **FundTile** component).
+
+### Using application events
+Application events are used for coarse-grained application-level communication, such as communication between components added to pages in App Builder. For example, in the Mutual Fund Explorer:
+- The **FundFilter** component fires the **FundFilterChange** event to notify other components that the search parameters (searchKey, sector, asset class) have changed.
+- The **PercentReturnRange** component fires the **RangeChange** event to notify other components that a range has changed. The RangeSlider component has a **design attribute** exposed in App Builder that lets you name the range so the listening component knows which range has changed. In the Mutual Fund Explorer page, the **PercentReturnRange** component is used three times to select a range for the following values: year-to-date return, one-year return, and five-year return.
+
+### Using component events
+Component Events are used for finer grained child-to-parent communication. For example, in the Mutual Fund Explorer:
+- The **Paginator** component fires the pageNext and pagePrevious events to notify its parent (FundTileList) that the user requested the next or previous page.
+- The **SearchBar**, **SectorSelector**, and **AssetClassSelector** components fire the onchange event to notify their parent (**FundFilter**) that their value has changed.
+
+### Using <aura:method>
+To implement parent-to-child communication, you can either:
+- Use data binding: Bind an attribute of the child to an attribute of the parent and track value changes in the child.
+- Call a method (exposed with <aura:method>) in the child component
+
+Check out the FundInfoPopup component for an example of using <aura:method>:
+
+- The showPopup method provides an API to show a popup for a specific fund at specific x and y coordinates on the screen. showPopup is called by the FundTileList component (in the onMouseMove controller function).
+    ```
+    <aura:method name="showPopup" action="{!c.showPopup}">
+        <aura:attribute name="fund" type="Fund__c"/>
+        <aura:attribute name="x" type="Decimal"/>
+        <aura:attribute name="y" type="Decimal"/>
+    </aura:method>
+    ```
+- The **hidePopup** method provides an API to hide the popup.
+
+### Using a third-party JavaScript library
+The MutualFundExplorer uses the noUiSlider library to display a double slider. NoUiSlider is lightweight and doesn’t have dependencies (in particular, no jQuery dependency). Check out the PercentReturnRange component to see how it’s used.
+
+![alt text](docs/double_slider.png)
+
+### Using bound vs unbound expressions
+In the Mutual Fund Explorer sample application, components created inside <aura:iteration> use unbound expressions to avoid the proliferation of event listeners. Check out FundTileList and FundTile for an example.
+```
+<c:FundTile fund="{#fund}" index="{#index}"/>
+```
+
+### Building admin-friendly components
+When possible, make your components configurable using **design attributes**. Design attributes are exposed in App Builder and make your components more reusable by enabling admins to configure them for specific situations. For example, in the Mutual Fund Explorer page, the **PercentReturnRange** component is used three times, configured differently each time to filter the list using different criteria: the year-to-date return, the one-year return, and the five-year return of the fund.
+
+![alt text](docs/design_attributes.png)
