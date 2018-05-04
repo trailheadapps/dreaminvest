@@ -87,7 +87,7 @@ Application events are used for coarse-grained application-level communication, 
 ### Using component events
 Component Events are used for finer grained child-to-parent communication. For example, in the Mutual Fund Explorer:
 - The [Paginator](force-app/main/default/aura/Paginator) component fires the pageNext and pagePrevious events to notify its parent (FundTileList) that the user requested the next or previous page.
-- The [SearchBar](force-app/main/default/aura/SearchBar), [SectorSelector](force-app/main/default/aura/SectorSelector), and [AssetSelector](force-app/main/default/aura/AssetSelector) components fire the onchange event to notify their parent (**FundFilter**) that their value has changed.
+- The [SearchBar](force-app/main/default/aura/SearchBar), [SectorSelector](force-app/main/default/aura/SectorSelector), and [AssetSelector](force-app/main/default/aura/AssetClassSelector) components fire the onchange event to notify their parent (**FundFilter**) that their value has changed.
 
 ### Using <aura:method>
 To implement parent-to-child communication, you can either:
