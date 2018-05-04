@@ -3,9 +3,9 @@
 .sfdx
 .project
 .salesforce
-node_modules
+.vscode
 .idea
 .tern-project
 .settings
-selenium-client-jars/
-test/artifacts
+IlluminatedCloud/
+node_modules
