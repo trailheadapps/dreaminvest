@@ -2,6 +2,8 @@
 
 DreamInvest is a sample financial services application. It features a mutual fund selector that illustrates standard coding practices and solutions to common problems when building applications with the Lightning Component Framework.
 
+[![Thumbnail](http://img.youtube.com/vi/0gIT8la-GRM/0.jpg)](https://www.youtube.com/watch?v=0gIT8la-GRM)
+
 ## Installation Instructions
 
 1. Authenticate with your hub org (if not already done):
@@ -67,12 +69,12 @@ In addition to storable actions, you can also build your own custom cache soluti
 ### Creating a dropdown box from picklist values
 Creating a dropdown box from picklist values is a common requirement. Take a look at the AssetClassSelector component for an example. The AssetClassSelector also uses the custom cache solution described previously to ensure that picklist values are only retrieved once from the server.
 
-![alt text](docs/dropdown_picklist.png)
+![Picklist dropdown](docs/dropdown_picklist.png)
 
 ### Creating a dropdown box from a list of records
 Creating a dropdown box from a list of records is also a common requirement. Take a look at the SectorSelector component for an example. Like AssetClassSelector, SectorSelector uses the custom cache solution described previously to ensure that the list of sectors is only retrieved once from the server.
 
-![alt text](docs/dropdown_records.png)
+![Records dropdown](docs/dropdown_records.png)
 
 ### Event bubbling
 When working with lists, letting events bubble, and registering a single event listener on a parent element instead of a separate event listener on every list item can significantly reduce the number of event listeners in your application, which can have a positive impact on performance. Check out the **FundTileList** component, and see how a single onmousemove event listener is registered on the list element (```<ul>```) instead of a separate listener on every list item (```<li>```) (inside the **FundTile** component).
@@ -107,7 +109,7 @@ Check out the FundInfoPopup component for an example of using <aura:method>:
 ### Using a third-party JavaScript library
 The MutualFundExplorer uses the noUiSlider library to display a double slider. NoUiSlider is lightweight and doesn’t have dependencies (in particular, no jQuery dependency). Check out the PercentReturnRange component to see how it’s used.
 
-![alt text](docs/double_slider.png)
+![Double slider](docs/double_slider.png)
 
 ### Using bound vs unbound expressions
 In the Mutual Fund Explorer sample application, components created inside <aura:iteration> use unbound expressions to avoid the proliferation of event listeners. Check out FundTileList and FundTile for an example.
@@ -118,4 +120,4 @@ In the Mutual Fund Explorer sample application, components created inside <aura:
 ### Building admin-friendly components
 When possible, make your components configurable using **design attributes**. Design attributes are exposed in App Builder and make your components more reusable by enabling admins to configure them for specific situations. For example, in the Mutual Fund Explorer page, the **PercentReturnRange** component is used three times, configured differently each time to filter the list using different criteria: the year-to-date return, the one-year return, and the five-year return of the fund.
 
-![alt text](docs/design_attributes.png)
+![Design attributes](docs/design_attributes.png)
