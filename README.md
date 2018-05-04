@@ -1,6 +1,6 @@
 ## DreamInvest Sample App
 
-Read [this blog post](https://developer.salesforce.com/blogs/developer-relations/2017/04/mutual-fund-explorer-new-lightning-components-sample-application.html) to learn more about the application.
+DreamInvest is a sample financial services application. It features a mutual fund selector that illustrates standard coding practices and solutions to common problems when building applications with the Lightning Component Framework.
 
 ## Installation Instructions
 
@@ -11,7 +11,7 @@ Read [this blog post](https://developer.salesforce.com/blogs/developer-relations
 
 1. Clone the dreaminvest repository:
     ```
-    git clone https://github.com/ccoenraets/dreaminvest
+    git clone https://github.com/trailheadapps/dreaminvest
     cd dreaminvest
     ```
 
@@ -25,7 +25,7 @@ Read [this blog post](https://developer.salesforce.com/blogs/developer-relations
     sfdx force:source:push
     ```
 
-1. Assign the nto permission set to the default user:
+1. Assign the dreaminvest permission set to the default user:
     ```
     sfdx force:user:permset:assign -n dreaminvest
     ```
@@ -35,7 +35,7 @@ Read [this blog post](https://developer.salesforce.com/blogs/developer-relations
     sfdx force:org:open
     ```
 
-1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, and flip the toggle to hide background images in Lightning Experience.
+1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
 
 1. Load sample data (Sectors):
     - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
