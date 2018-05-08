@@ -4,7 +4,13 @@ DreamInvest is a sample financial services application. It features a mutual fun
 
 [![Thumbnail](http://img.youtube.com/vi/0gIT8la-GRM/0.jpg)](https://www.youtube.com/watch?v=0gIT8la-GRM)
 
-## Installation Instructions
+## Installation instructions
+There are two ways to install DreamInvest:
+- Using Salesforce DX 
+- Using an unlocked package
+
+### Installing DreamInvest using Salesforce DX
+This is the recommended installation option for developers who want to experience the app and the code.
 
 1. Authenticate with your hub org (if not already done):
     ```
