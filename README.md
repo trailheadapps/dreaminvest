@@ -4,7 +4,13 @@ DreamInvest is a sample financial services application. It features a mutual fun
 
 [![Thumbnail](http://img.youtube.com/vi/0gIT8la-GRM/0.jpg)](https://www.youtube.com/watch?v=0gIT8la-GRM)
 
-## Installation Instructions
+## Installation instructions
+There are two ways to install DreamInvest:
+- Using Salesforce DX 
+- Using an unlocked package
+
+### Installing DreamInvest using Salesforce DX
+This is the recommended installation option for developers who want to experience the app and the code.
 
 1. Authenticate with your hub org (if not already done):
     ```
@@ -36,6 +42,21 @@ DreamInvest is a sample financial services application. It features a mutual fun
     ```
     sfdx force:org:open
     ```
+
+### Installing DreamInvest using an unlocked package
+This is the recommended option for non developers. Use this option if you want to experience the sample app but do not plan to modify the code.
+
+1. [Sign up](https://developer.salesforce.com/signup) for a developer edition.
+
+1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1)
+
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000JjFUIA0) to install the DreamInvest unlocked package into your developer edition org.
+
+1. Select **Install for All Users**.
+
+### Completing the installation
+
+Follow the steps below to complete the installation regardless of the installation option you selected above:
 
 1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
 
