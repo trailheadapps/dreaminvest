@@ -43,6 +43,21 @@ This is the recommended installation option for developers who want to experienc
     sfdx force:org:open
     ```
 
+### Installing DreamInvest using an unlocked package
+This is the recommended option for non developers. Use this option if you want to experience the sample app but do not plan to modify the code.
+
+1. [Sign up](https://developer.salesforce.com/signup) for a developer edition.
+
+1. Enable My Domain. Follow the instructions to enable My Domain [here].(https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1)
+
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000JjFUIA0) to install the DreamInvest unlocked package into your developer edition org.
+
+1. Select **Install for All Users**.
+
+### Completing the installation
+
+Follow the steps below to complete the installation regardless of the installation option you selected above:
+
 1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
 
 1. Load sample data (Sectors):
