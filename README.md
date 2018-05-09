@@ -1,12 +1,14 @@
 # DreamInvest Sample App
 
+[![CircleCI](https://circleci.com/gh/trailheadapps/dreaminvest.svg?style=svg)](https://circleci.com/gh/trailheadapps/dreaminvest)
+
 DreamInvest is a sample financial services application. It features a mutual fund selector that illustrates standard coding practices and solutions to common problems when building applications with the Lightning Component Framework.
 
 [![Thumbnail](http://img.youtube.com/vi/0gIT8la-GRM/0.jpg)](https://www.youtube.com/watch?v=0gIT8la-GRM)
 
 ## Installation instructions
 There are two ways to install DreamInvest:
-- Using Salesforce DX 
+- Using Salesforce DX
 - Using an unlocked package
 
 ### Installing DreamInvest using Salesforce DX
