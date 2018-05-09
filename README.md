@@ -142,3 +142,7 @@ In the Mutual Fund Explorer sample application, components created inside <aura:
 When possible, make your components configurable using **design attributes**. Design attributes are exposed in App Builder and make your components more reusable by enabling admins to configure them for specific situations. For example, in the Mutual Fund Explorer page, the PercentReturnRange](force-app/main/default/aura/PercentReturnRange) component is used three times, configured differently each time to filter the list using different criteria: the year-to-date return, the one-year return, and the five-year return of the fund.
 
 ![Design attributes](docs/design_attributes.png)
+
+## Additional resources
+
+Blog post: [Mutual Fund Explorer: A New Lightning Components Sample Application](https://developer.salesforce.com/blogs/developer-relations/2017/04/mutual-fund-explorer-new-lightning-components-sample-application.html)
