@@ -57,7 +57,7 @@ This is the recommended option for non developers. Use this option if you want t
 
 1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1)
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002zZPRQA2) to install the DreamInvest unlocked package into your developer edition org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036se6QAA) to install the DreamInvest unlocked package into your developer edition org.
 
 1. Select **Install for All Users**.
 
