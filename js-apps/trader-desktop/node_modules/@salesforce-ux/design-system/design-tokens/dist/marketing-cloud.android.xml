@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <property name="FONT_WEIGHT_LIGHT" category="font" value="300"/>
+  <property name="FONT_WEIGHT_REGULAR" category="font" value="400"/>
+  <property name="FONT_WEIGHT_BOLD" category="font" value="700"/>
+  <property name="FONT_SIZE_HEADING_MEDIUM" category="font-size" value="18"/>
+  <property name="FONT_SIZE_MEDIUM" category="font-size" value="16"/>
+  <property name="FONT_SIZE_TEXT_SMALL" category="font-size" value="13"/>
+  <property name="FONT_SIZE_MEDIUM_A" category="font-size" value="18"/>
+  <property name="FONT_SIZE_X_LARGE" category="font-size" value="24"/>
+  <property name="FONT_SIZE_X_LARGE_A" category="font-size" value="25.12"/>
+  <property name="FONT_SIZE_HEADING_X_LARGE" category="font-size" value="32"/>
+  <property name="FONT_SIZE_XX_LARGE" category="font-size" value="32"/>
+  <property name="FONT_SIZE_TEXT_XX_SMALL" category="font-size" value="10"/>
+  <property name="FONT_SIZE_LARGE" category="font-size" value="20"/>
+  <property name="FONT_SIZE_HEADING_LARGE" category="font-size" value="24"/>
+  <property name="FONT_SIZE_TEXT_X_LARGE" category="font-size" value="20"/>
+  <property name="FONT_SIZE_X_SMALL" category="font-size" value="10"/>
+  <property name="FONT_SIZE_HEADING_XX_SMALL" category="font-size" value="10"/>
+  <property name="FONT_SIZE_HEADING_X_SMALL" category="font-size" value="12"/>
+  <property name="FONT_SIZE_TEXT_LARGE" category="font-size" value="18"/>
+  <property name="FONT_SIZE_SMALL" category="font-size" value="14"/>
+  <property name="FONT_SIZE_TEXT_MEDIUM" category="font-size" value="16"/>
+  <property name="FONT_SIZE_TEXT_X_SMALL" category="font-size" value="12"/>
+  <property name="FONT_SIZE_HEADING_SMALL" category="font-size" value="14"/>
+  <property name="LINE_HEIGHT_HEADING" category="line-height" value="1.25"/>
+  <property name="LINE_HEIGHT_TEXT" category="line-height" value="1.375"/>
+  <property name="LINE_HEIGHT_RESET" category="line-height" value="1"/>
+  <property name="LINE_HEIGHT_TAB" category="line-height" value="40"/>
+  <property name="FONT_FAMILY" category="font" value="&apos;Salesforce Sans&apos;, Arial, sans-serif"/>
+  <property name="FONT_FAMILY_TEXT" category="font" value="&apos;Salesforce Sans&apos;, Arial, sans-serif"/>
+  <property name="FONT_FAMILY_HEADING" category="font" value="&apos;Salesforce Sans&apos;, Arial, sans-serif"/>
+  <property name="FONT_FAMILY_MONOSPACE" category="font" value="Consolas, Menlo, Monaco, Courier, monospace"/>
+</resources>

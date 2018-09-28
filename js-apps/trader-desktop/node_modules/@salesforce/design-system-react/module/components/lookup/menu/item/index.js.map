@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../.tmp-es/components/lookup/menu/item/index.jsx"],"names":["Item"],"mappings":"AAAA;AACA,OAAOA,IAAP,MAAiB,oBAAjB;AAEA,eAAeA,IAAf","sourcesContent":["// Alias\nimport Item from '../../private/item';\n\nexport default Item;\n"],"file":"index.js"}

@@ -1,6 +1,6 @@
 ({
 	afterScriptsLoaded : function(component, event, helper) {
-        var sectors = window.DataCache.getData("sectors");
+        var sectors = window.cache.get("sectors");
         if (sectors) {
             console.log('Sectors retrieved from custom cache');
             component.set("v.sectors", sectors);

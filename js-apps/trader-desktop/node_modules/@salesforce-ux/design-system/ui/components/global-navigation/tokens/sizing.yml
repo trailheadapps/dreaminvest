@@ -1,0 +1,21 @@
+global:
+  scope: component
+  type: size
+  category: sizing
+  cssProperties:
+  - font
+  - font-size
+  - '*width'
+  - '*height'
+  - flex
+  - top
+  - right
+  - bottom
+  - left
+  - 'margin*'
+  - 'padding*'
+  - transform
+props:
+  HEIGHT_CONTEXT_BAR:
+    value: 2.5rem
+    comment: Context bar height.

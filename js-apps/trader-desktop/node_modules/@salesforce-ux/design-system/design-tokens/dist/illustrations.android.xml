@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <property name="ILLUSTRATION_EMPTY_STATE_ASSISTANT" category="illustrations" value="/assets/images/illustrations/empty-state-assistant.svg"/>
+  <property name="ILLUSTRATION_EMPTY_STATE_EVENTS" category="illustrations" value="/assets/images/illustrations/empty-state-events.svg"/>
+  <property name="ILLUSTRATION_EMPTY_STATE_TASKS" category="illustrations" value="/assets/images/illustrations/empty-state-tasks.svg"/>
+</resources>

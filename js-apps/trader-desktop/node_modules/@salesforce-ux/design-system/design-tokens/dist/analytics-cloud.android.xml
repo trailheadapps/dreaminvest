@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <property name="SPACING_X_SMALL" category="spacing" value="8"/>
+  <property name="SPACING_XXX_SMALL" category="spacing" value="2"/>
+  <property name="SPACING_XX_SMALL" category="spacing" value="4"/>
+  <property name="BORDER_WIDTH_THIN" category="spacing" value="1px"/>
+  <property name="BORDER_STROKE_WIDTH_THIN" category="spacing" value="1px"/>
+  <property name="SPACING_SMALL" category="spacing" value="12"/>
+  <property name="COMPONENT_SPACING_MARGIN" category="spacing" value="0"/>
+  <property name="BORDER_STROKE_WIDTH_THICK" category="spacing" value="2px"/>
+  <property name="BORDER_WIDTH_THICK" category="spacing" value="2px"/>
+  <property name="SPACING_MEDIUM" category="spacing" value="16"/>
+  <property name="COMPONENT_SPACING_PADDING" category="spacing" value="16"/>
+  <property name="SPACING_NONE" category="spacing" value="0"/>
+  <property name="SPACING_X_LARGE" category="spacing" value="64"/>
+  <property name="SPACING_XX_LARGE" category="spacing" value="128"/>
+  <property name="SPACING_LARGE" category="spacing" value="32"/>
+  <property name="MQ_LARGE" category="media-query" value="only screen and (min-width: 64em)"/>
+  <property name="TIMING_5" category="motion" value=".8s"/>
+  <property name="COLOR_BLUE_MIDNIGHT_BLUE" category="background-color" value="#ff00396b"/>
+  <property name="BORDER_RADIUS_LARGE" category="radius" value="8"/>
+  <property name="LINE_HEIGHT_RESET" category="line-height" value="1"/>
+  <property name="FONT_SIZE_MEDIUM" category="font-size" value="16"/>
+  <property name="COLOR_BLUE_ENDEAVOUR" category="background-color" value="#ff005fb2"/>
+  <property name="COLOR_BLUE_SPARTA" category="background-color" value="#ffe6ecf2"/>
+  <property name="COLOR_BLUE_ZODIAC" category="background-color" value="#ff17324d"/>
+  <property name="FONT_WEIGHT_REGULAR" category="font-weight" value="400"/>
+  <property name="FONT_SIZE_X_LARGE" category="font-size" value="20"/>
+  <property name="COLOR_BLUE_GHOST" category="background-color" value="#ff7d98b3"/>
+  <property name="COLOR_ORANGE_ALERT" category="background-color" value="#ffffb75d"/>
+  <property name="TIMING_TEST" category="motion" value="5s"/>
+  <property name="COLOR_GREEN_SEA_100" category="background-color" value="#ff35d4cc"/>
+  <property name="COLOR_BLUE_ROLLINGSTONE" category="background-color" value="#ff40607f"/>
+  <property name="BORDER_RADIUS_CIRCLE" category="radius" value="0.5"/>
+  <property name="COLOR_BLUE_SKY_100" category="background-color" value="#ff6cb7fa"/>
+  <property name="FONT_SIZE_XX_LARGE" category="font-size" value="24"/>
+  <property name="FONT_SIZE_X_MEDIUM" category="font-size" value="14"/>
+  <property name="COLOR_GREEN_SEA_300" category="background-color" value="#ff2ec2ba"/>
+  <property name="COLOR_BLUE_RHINO" category="background-color" value="#ff294766"/>
+  <property name="COLOR_BLUE_BIGSTONE_BLUE" category="background-color" value="#ff0a1f33"/>
+  <property name="COLOR_GREEN_SUCCESS" category="background-color" value="#ff4bca81"/>
+  <property name="COLOR_BLUE_SKY_300" category="background-color" value="#ff44a2f5"/>
+  <property name="MQ_SMALL" category="media-query" value="only screen and (min-width: 28em)"/>
+  <property name="COLOR_WHITE" category="background-color" value="#ffffffff"/>
+  <property name="BORDER_RADIUS_SMALL" category="radius" value="2"/>
+  <property name="FONT_FAMILY_BODY" category="font" value="&apos;Salesforce Sans&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif"/>
+  <property name="COLOR_PURPLE_RAIN_100" category="background-color" value="#ffad90f5"/>
+  <property name="FONT_SIZE_LARGE" category="font-size" value="18"/>
+  <property name="COLOR_GREEN_SEA_500" category="background-color" value="#ff27aba4"/>
+  <property name="COLOR_BLUE_SKY_500" category="background-color" value="#ff2d93ed"/>
+  <property name="COLOR_BLUE_SPIDER" category="background-color" value="#ffa3b8cc"/>
+  <property name="BORDER_RADIUS_MEDIUM" category="radius" value="4"/>
+  <property name="COLOR_PURPLE_RAIN_300" category="background-color" value="#ff9271e8"/>
+  <property name="COLOR_GREEN_SEA_700" category="background-color" value="#ff209691"/>
+  <property name="COLOR_BLUE_SKY_700" category="background-color" value="#ff2081d6"/>
+  <property name="COLOR_BLUE_ALUMINIUM" category="background-color" value="#ff5c7a99"/>
+  <property name="MQ_MEDIUM" category="media-query" value="only screen and (min-width: 48em)"/>
+  <property name="COLOR_PURPLE_RAIN_500" category="background-color" value="#ff7a56d6"/>
+  <property name="COLOR_GREEN_SEA_900" category="background-color" value="#ff1b827d"/>
+  <property name="COLOR_BLUE_SKY_900" category="background-color" value="#ff1970bd"/>
+  <property name="FONT_SIZE_X_SMALL" category="font-size" value="10"/>
+  <property name="BORDER_RADIUS_PILL" category="radius" value="80"/>
+  <property name="COLOR_PURPLE_RAIN_700" category="background-color" value="#ff643fc0"/>
+  <property name="COLOR_PURPLE_RAIN_900" category="background-color" value="#ff594195"/>
+  <property name="LINE_HEIGHT_HEADING" category="line-height" value="1.25"/>
+  <property name="COLOR_BLUE_BISCAY" category="background-color" value="#ff16325c"/>
+  <property name="MQ_X_LARGE" category="media-query" value="only screen and (min-width: 80em)"/>
+  <property name="FONT_SIZE_SMALL" category="font-size" value="12"/>
+  <property name="LINE_HEIGHT_TEXT" category="line-height" value="1.5"/>
+  <property name="COLOR_BLUE_SCIENCE" category="background-color" value="#ff0070d2"/>
+  <property name="TIMING_1" category="motion" value=".1s"/>
+  <property name="FONT_WEIGHT_BOLD" category="font-weight" value="700"/>
+  <property name="TIMING_2" category="motion" value=".2s"/>
+  <property name="TIMING_3" category="motion" value=".4s"/>
+  <property name="COLOR_RED_ERROR" category="background-color" value="#ffd4504c"/>
+  <property name="COLOR_BLUE_ATHENS" category="background-color" value="#fff2f6fa"/>
+  <property name="COLOR_BLUE_ROME" category="background-color" value="#ffc5d3e0"/>
+  <property name="TIMING_4" category="motion" value=".6s"/>
+  <property name="FONT_WEIGHT_LIGHT" category="font-weight" value="300"/>
+</resources>

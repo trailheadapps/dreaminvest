@@ -1,14 +1,14 @@
-window.DataCache = (function() {
+window.cache = (function() {
 
-    var cache = {};
+    var values = {};
 
 	return {
-        setData: function(name, data) {
-    	   cache[name] = data;				
+        set: function(name, data) {
+    	   values[name] = data;				
         },
         
-        getData: function(name) {
-    	   return cache[name];				
+        get: function(name) {
+    	   return values[name];				
         }
 	};
 

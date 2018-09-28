@@ -1,0 +1,10 @@
+<aura:tokens>
+  <aura:token name="bannerUserDefaultImage" value=""/>
+  <aura:token name="bannerGroupDefaultImage" value=""/>
+  <aura:token name="userDefaultAvatar" value=""/>
+  <aura:token name="userDefaultAvatarMedium" value=""/>
+  <aura:token name="userDefaultAvatarSmall" value=""/>
+  <aura:token name="groupDefaultAvatar" value=""/>
+  <aura:token name="groupDefaultAvatarMedium" value=""/>
+  <aura:token name="groupDefaultAvatarSmall" value=""/>
+</aura:tokens>

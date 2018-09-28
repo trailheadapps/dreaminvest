@@ -1,0 +1,5 @@
+<aura:tokens>
+  <aura:token name="illustrationEmptyStateAssistant" value="/assets/images/illustrations/empty-state-assistant.svg"/>
+  <aura:token name="illustrationEmptyStateEvents" value="/assets/images/illustrations/empty-state-events.svg"/>
+  <aura:token name="illustrationEmptyStateTasks" value="/assets/images/illustrations/empty-state-tasks.svg"/>
+</aura:tokens>

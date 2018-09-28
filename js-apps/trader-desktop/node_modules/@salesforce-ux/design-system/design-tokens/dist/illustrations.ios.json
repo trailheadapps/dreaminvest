@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "type": "string",
+      "category": "illustrations",
+      "value": "/assets/images/illustrations/empty-state-assistant.svg",
+      "name": "illustrationEmptyStateAssistant"
+    },
+    {
+      "type": "string",
+      "category": "illustrations",
+      "value": "/assets/images/illustrations/empty-state-events.svg",
+      "name": "illustrationEmptyStateEvents"
+    },
+    {
+      "type": "string",
+      "category": "illustrations",
+      "value": "/assets/images/illustrations/empty-state-tasks.svg",
+      "name": "illustrationEmptyStateTasks"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../.tmp-es/components/menu-list/list.jsx"],"names":["List"],"mappings":"AAAA;AACA,OAAOA,IAAP,MAAiB,8BAAjB;AAEA,eAAeA,IAAf","sourcesContent":["// Alias\nimport List from '../utilities/menu-list/index';\n\nexport default List;\n"],"file":"list.js"}

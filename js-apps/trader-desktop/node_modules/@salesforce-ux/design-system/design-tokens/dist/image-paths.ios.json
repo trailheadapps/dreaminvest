@@ -1,0 +1,52 @@
+{
+  "properties": [
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "bannerUserDefaultImage"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "bannerGroupDefaultImage"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "userDefaultAvatar"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "userDefaultAvatarMedium"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "userDefaultAvatarSmall"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "groupDefaultAvatar"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "groupDefaultAvatarMedium"
+    },
+    {
+      "category": "utility",
+      "type": "string",
+      "value": "",
+      "name": "groupDefaultAvatarSmall"
+    }
+  ]
+}

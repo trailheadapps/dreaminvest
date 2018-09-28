@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <property name="BANNER_USER_DEFAULT_IMAGE" category="utility" value=""/>
+  <property name="BANNER_GROUP_DEFAULT_IMAGE" category="utility" value=""/>
+  <property name="USER_DEFAULT_AVATAR" category="utility" value=""/>
+  <property name="USER_DEFAULT_AVATAR_MEDIUM" category="utility" value=""/>
+  <property name="USER_DEFAULT_AVATAR_SMALL" category="utility" value=""/>
+  <property name="GROUP_DEFAULT_AVATAR" category="utility" value=""/>
+  <property name="GROUP_DEFAULT_AVATAR_MEDIUM" category="utility" value=""/>
+  <property name="GROUP_DEFAULT_AVATAR_SMALL" category="utility" value=""/>
+</resources>

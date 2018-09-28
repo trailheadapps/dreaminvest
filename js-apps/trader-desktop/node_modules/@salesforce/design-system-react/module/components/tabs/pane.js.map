@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../.tmp-es/components/tabs/pane.jsx"],"names":["TabPanel"],"mappings":"AAAA;AACA,OAAOA,QAAP,MAAqB,SAArB;AAEA,eAAeA,QAAf","sourcesContent":["// This is just an alias, Sydney Bristow. Remove at next breaking release.\nimport TabPanel from './panel';\n\nexport default TabPanel;\n"],"file":"pane.js"}

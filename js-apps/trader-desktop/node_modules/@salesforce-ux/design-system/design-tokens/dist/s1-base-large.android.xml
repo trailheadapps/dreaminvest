@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <property name="WIDTH_STAGE_LEFT_COLLAPSED" category="sizing" value="64"/>
+  <property name="WIDTH_STAGE_LEFT_EXPANDED" category="sizing" value="240"/>
+  <property name="HEIGHT_HEADER" category="sizing" value="50"/>
+  <property name="SQUARE_ICON_MEDIUM" category="sizing" value="32"/>
+  <property name="FONT_SIZE_SMALL" category="font-size" value="12"/>
+  <property name="FONT_SIZE_MEDIUM" category="font-size" value="13"/>
+  <property name="FONT_SIZE_MEDIUM_A" category="font-size" value="14"/>
+  <property name="FONT_SIZE_LARGE" category="font-size" value="16"/>
+  <property name="FONT_SIZE_X_LARGE" category="font-size" value="20"/>
+  <property name="FONT_SIZE_XX_LARGE" category="font-size" value="28"/>
+  <property name="LINE_HEIGHT_TEXT" category="line-height" value="1.5"/>
+</resources>

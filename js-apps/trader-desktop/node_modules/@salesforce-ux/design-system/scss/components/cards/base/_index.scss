@@ -1,0 +1,129 @@
+// Lightning Design System 2.6.1
+// Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+// Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
+
+@import 'deprecate';
+
+/**
+* @summary Initializes card
+*
+* @name base
+* @selector .slds-card
+* @restrict article, div, section
+* @variant
+*/
+.slds-card {
+  position: relative;
+  padding: 0;
+  background: $card-color-background;
+  border: $border-width-thin solid $card-color-border;
+  border-radius: $border-radius-medium;
+  background-clip: padding-box;
+  box-shadow: $card-shadow;
+
+  // Adds spacing between cards
+  + .slds-card {
+    margin-top: $card-spacing-margin;
+  }
+
+  /**
+   * @summary Used to add padding to the left and right sides of a card's body content
+   *
+   * @selector .slds-card__body_inner
+   * @restrict .slds-card__body
+   */
+  &__body_inner,
+  &__body--inner {
+    padding: $card-body-padding;
+  }
+
+  /**
+   * Initializes card header
+   *
+   * @selector .slds-card__header
+   * @restrict .slds-card div
+   */
+  &__header {
+    padding: $card-header-padding;
+    margin: $card-header-margin;
+  }
+
+  /**
+   * @summary Used to style the header title when it is a link
+   *
+   * @selector .slds-card__header-link
+   * @restrict .slds-card__header a
+   */
+  &__header-link {
+    color: inherit;
+    font-weight: $card-font-weight;
+  }
+
+  /**
+   * Initializes card body
+   *
+   * @selector .slds-card__body
+   * @restrict .slds-card div
+   */
+  &__body {
+    margin-bottom: $spacing-small;
+  }
+
+  &__body:empty,
+  &__footer:empty {
+    display: none;
+  }
+
+  /**
+   * Initializes card footer
+   *
+   * @selector .slds-card__footer
+   * @restrict .slds-card footer
+   */
+  &__footer {
+    padding: $card-footer-padding;
+    margin-top: $card-footer-margin;
+    text-align: $card-footer-text-align;
+    font-size: $font-size-text-small;
+    border-top: $border-width-thin solid $card-footer-color-border;
+  }
+}
+
+/**
+* @summary Actionable element within card footer
+* @selector .slds-card__footer-action
+* @restrict .slds-card__footer a
+*/
+.slds-card__footer-action {
+  display: block;
+}
+
+/**
+ * Use class if card consumes any form of a tile
+ *
+ * @selector .slds-card__tile
+ * @restrict .slds-tile
+ */
+.slds-card__tile {
+  margin-top: $spacing-x-small;
+}
+
+.slds-region__pinned-left,
+.slds-region__pinned-right {
+
+  .slds-card,
+  .slds-card-wrapper,
+  .slds-card_boundary,
+  .slds-tabs_card {
+    border-radius: 0;
+    border: 0;
+    border-bottom: $border-width-thin solid $color-border;
+    box-shadow: none;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+@import 'blame';
