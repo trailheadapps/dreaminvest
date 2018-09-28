@@ -10,10 +10,10 @@
 
     ```zsh
     git clone https://github.com/trailheadapps/dreaminvest
-    cd carmax
+    cd dreaminvest
     ```
 
-1.  Create a scratch org and provide it with an alias (carmax):
+1.  Create a scratch org and provide it with an alias (dreaminvest):
 
     ```zsh
     sfdx force:org:create -s -f config/project-scratch-def.json -a dreaminvest
@@ -25,7 +25,7 @@
     sfdx force:source:push
     ```
 
-1.  Assign the carmax permission set to the default user:
+1.  Assign the dreaminvest permission set to the default user:
 
     ```zsh
     sfdx force:user:permset:assign -n dreaminvest
