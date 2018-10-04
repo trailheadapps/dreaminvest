@@ -5,8 +5,8 @@
     <lightning:card title="Filters" iconName="utility:feed">
 
         <c:SearchBar onchange="{!c.searchKeyChangeHandler}"/>
-        <c:AssetClassSelector onchange="{!c.assetClassChangeHandler}"/>
-        <c:SectorSelector onchange="{!c.sectorChangeHandler}"/>
+        <c:AssetClassSelectorLDS onchange="{!c.assetClassChangeHandler}"/>
+        <c:SectorSelectorLDS onchange="{!c.sectorChangeHandler}"/>
 
     </lightning:card>
     

@@ -10,7 +10,7 @@
 
     <lightning:select label="Sector" value="{!v.selectedValue}" onchange="{!c.changeHandler}">
         <aura:iteration items="{!v.sectors}" var="sector">
-            <option text="{#sector.Name}" value="{#sector.Id.value}"/>
+            <option text="{#sector.Name}" value="{#sector.Id}" />
         </aura:iteration>
     </lightning:select>
 

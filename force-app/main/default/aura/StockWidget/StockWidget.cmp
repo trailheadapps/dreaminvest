@@ -1,0 +1,47 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <ltng:require scripts="{!join(',', $Resource.config, $Resource.stockService)}" />
+
+    <aura:attribute name="stock" type="Object" />
+    <aura:attribute name="symbol" type="String" />
+
+    <lightning:card title="Stock" iconName="standard:feed">
+        <aura:set attribute="actions">
+            <lightning:layout>
+                <lightning:layoutItem>
+                    <lightning:input value="{!v.symbol}" class="symbol-input slds-m-right_xx-small" />
+                </lightning:layoutItem>
+                <lightning:layoutItem>
+                    <lightning:button label="Get Stock" onclick="{!c.getStock}" />
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:set>
+
+        <aura:if isTrue="{!v.stock}">
+            <p class="symbol slds-text-heading_medium">{!v.stock.symbol}</p>
+            <p class="price slds-text-heading_large">
+                <lightning:formattedNumber value="{!v.stock.price}" style="currency" currencyCode="USD" />
+            </p>
+            <lightning:layout horizontalAlign="center">
+                <lightning:layoutItem padding="horizontal-small">
+                    Open:
+                    <lightning:formattedNumber value="{!v.stock.open}" style="currency" currencyCode="USD" />
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="horizontal-small">
+                    High:
+                    <lightning:formattedNumber value="{!v.stock.high}" style="currency" currencyCode="USD" />
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="horizontal-small">
+                    Low:
+                    <lightning:formattedNumber value="{!v.stock.low}" style="currency" currencyCode="USD" />
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="horizontal-small">
+                    Change:
+                    <lightning:formattedNumber value="{!v.stock.changePercent}" style="percent" minimumFractionDigits="2" />
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:if>
+
+    </lightning:card>
+
+</aura:component>

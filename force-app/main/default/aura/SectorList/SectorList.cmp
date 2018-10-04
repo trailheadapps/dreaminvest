@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="FundController" access="global">
+
+    <ltng:require scripts="{!$Resource.sectorService}"/>
+    <aura:attribute name="sectors" type="Sector__c[]" />
+
+    <lightning:card title="Sector List" iconName="custom:custom3">
+
+        <aura:set attribute="actions">
+            <lightning:button label="Clear" variant="bare" onclick="{!c.clear}"/>
+        </aura:set>
+
+        <lightning:button label="Get Sectors" onclick="{!c.loadSectors}"/>
+        <lightning:button label="Get Sectors Fast" onclick="{!c.loadSectorsFast}"/>
+    
+        <div class="list">
+            <aura:iteration items="{!v.sectors}" var="sector">
+                <p>{#sector.Name}</p>
+            </aura:iteration>
+        </div>
+
+    </lightning:card>
+
+</aura:component>	

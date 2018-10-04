@@ -4,12 +4,19 @@
         <headerColor>#84BF41</headerColor>
         <logo>invest_logo4</logo>
         <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>DreamInvest</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>Fund_Explorer</tabs>
+    <tabs>Trader_Desktop</tabs>
+    <tabs>Loans</tabs>
+    <tabs>Quotes</tabs>
+    <tabs>Sector_List</tabs>
     <tabs>Fund__c</tabs>
     <tabs>Sector__c</tabs>
     <tabs>standard-Account</tabs>

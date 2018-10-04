@@ -1,6 +1,6 @@
-# DreamInvest Sample App
+## Installation
 
-[![CircleCI](https://circleci.com/gh/trailheadapps/dreaminvest.svg?style=svg)](https://circleci.com/gh/trailheadapps/dreaminvest)
+1.  Authenticate with your hub org (if not already done):
 
 DreamInvest is a sample financial services application. It features a mutual fund selector that illustrates standard coding practices and solutions to common problems when building applications with the Lightning Component Framework.
 
@@ -20,31 +20,36 @@ DreamInvest is a sample financial services application. It features a mutual fun
 This is the recommended installation option for developers who want to experience the app and the code.
 
 1. Authenticate with your hub org (if not already done):
-    ```
+
+    ```zsh
     sfdx force:auth:web:login -d -a myhuborg
     ```
 
-1. Clone the dreaminvest repository:
-    ```
+1.  Clone this repository:
+
+    ```zsh
     git clone https://github.com/trailheadapps/dreaminvest
     cd dreaminvest
     ```
 
-1. Create a scratch org and provide it with an alias (nto):
-    ```
+1.  Create a scratch org and provide it with an alias (dreaminvest):
+
+    ```zsh
     sfdx force:org:create -s -f config/project-scratch-def.json -a dreaminvest
     ```
 
-1. Push the app to your scratch org:
-    ```
+1.  Push the app to your scratch org:
+
+    ```zsh
     sfdx force:source:push
     ```
 
-1. Assign the dreaminvest permission set to the default user:
-    ```
+1.  Assign the dreaminvest permission set to the default user:
+
+    ```zsh
     sfdx force:user:permset:assign -n dreaminvest
     ```
-
+    
 1. Upload Sector data:
     ```
     sfdx force:data:bulk:upsert -s Sector__c -f ./data/sectors.csv -w 1 -i Sector_Id__c
@@ -54,10 +59,10 @@ This is the recommended installation option for developers who want to experienc
     ```
     sfdx force:data:bulk:upsert -s Fund__c -f ./data/funds.csv -w 1 -i Id
     ```
-
-1. Open the scratch org:
+    
+1.  Open the scratch org:
     ```
-    sfdx force:org:open
+    sfdx force:org:open -p /lightning/page/home
     ```
 
 ### Installing DreamInvest using an unlocked package
@@ -165,3 +170,4 @@ When possible, make your components configurable using **design attributes**. De
 ## Additional resources
 
 Blog post: [Mutual Fund Explorer: A New Lightning Components Sample Application](https://developer.salesforce.com/blogs/developer-relations/2017/04/mutual-fund-explorer-new-lightning-components-sample-application.html)
+=======

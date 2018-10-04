@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+
+    <aura:registerEvent name="onchange" type="c:ValueChange"/>
+
+    <lightning:recordEditForm objectApiName="Fund__c">
+        <lightning:inputField fieldName="Asset_Class__c" onchange="{!c.changeHandler}" />
+    </lightning:recordEditForm>            
+
+</aura:component>	
