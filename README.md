@@ -45,6 +45,16 @@ This is the recommended installation option for developers who want to experienc
     sfdx force:user:permset:assign -n dreaminvest
     ```
 
+1. Upload Sector data:
+    ```
+    sfdx force:data:bulk:upsert -s Sector__c -f ./data/sectors.csv -w 1 -i Sector_Id__c
+    ```
+
+1. Upload Fund data:
+    ```
+    sfdx force:data:bulk:upsert -s Fund__c -f ./data/funds.csv -w 1 -i Id
+    ```
+
 1. Open the scratch org:
     ```
     sfdx force:org:open
@@ -61,12 +71,6 @@ This is the recommended option for non developers. Use this option if you want t
 
 1. Select **Install for All Users**.
 
-### Completing the installation
-
-Follow the steps below to complete the installation regardless of the installation option you selected above:
-
-1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
-
 1. Load sample data (Sectors):
     - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
     - Click **Launch Wizard**.
@@ -81,6 +85,12 @@ Follow the steps below to complete the installation regardless of the installati
     - For Which Sector field in your file specifies the Master/Detail relationship?, select **Sector Id (External ID)**.
     - Drag **funds.csv** from the data folder of this project to the upload area.
     - Click **Next**, **Next**, and **Start Import**.
+
+### Completing the installation
+
+Follow the steps below to complete the installation regardless of the installation option you selected above:
+
+1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
 
 1. In **App Launcher**, select the **DreamInvest** app
 
