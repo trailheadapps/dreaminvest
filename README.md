@@ -76,7 +76,8 @@ This is the recommended option for non developers. Use this option if you want t
     - Click **Launch Wizard**.
     - Click the **Custom objects** tab, click **Sectors**, and click **Add New Records**.
     - Drag **sectors.csv** from the data folder of this project to the upload area.
-    - Click **Next**, **Next**, and **Start Import**.
+    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields. 
+    - Click **Next**, and **Start Import**.
 
 1. Load sample data (Funds):
     - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
@@ -84,7 +85,8 @@ This is the recommended option for non developers. Use this option if you want t
     - Click the **Custom objects** tab, click **Funds**, and click **Add New Records**.
     - For Which Sector field in your file specifies the Master/Detail relationship?, select **Sector Id (External ID)**.
     - Drag **funds.csv** from the data folder of this project to the upload area.
-    - Click **Next**, **Next**, and **Start Import**.
+    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields. 
+    - Click **Next**, and **Start Import**.
 
 ### Completing the installation
 
