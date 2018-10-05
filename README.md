@@ -1,6 +1,6 @@
-## Installation
+# DreamInvest Sample App
 
-1.  Authenticate with your hub org (if not already done):
+[![CircleCI](https://circleci.com/gh/trailheadapps/dreaminvest.svg?style=svg)](https://circleci.com/gh/trailheadapps/dreaminvest)
 
 DreamInvest is a sample financial services application. It features a mutual fund selector that illustrates standard coding practices and solutions to common problems when building applications with the Lightning Component Framework.
 
