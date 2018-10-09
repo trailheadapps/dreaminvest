@@ -1,16 +1,16 @@
 <aura:component >
-    
+
     <aura:attribute name="fund" type="Fund__c"/>
-    
-    <aura:method name="showPopup" action="{!c.showPopup}"> 
-        <aura:attribute name="fund" type="Fund__c"/> 
-        <aura:attribute name="x" type="Decimal"/> 
-        <aura:attribute name="y" type="Decimal"/> 
+
+    <aura:method name="showPopup" action="{!c.showPopup}">
+        <aura:attribute name="fund" type="Fund__c"/>
+        <aura:attribute name="x" type="Decimal"/>
+        <aura:attribute name="y" type="Decimal"/>
     </aura:method>
 
-    <aura:method name="hidePopup" action="{!c.hidePopup}"/> 
-    
-    <section aura:id="popup" class="slds-popover slds-nubbin--left slds-hidden" role="dialog">
+    <aura:method name="hidePopup" action="{!c.hidePopup}"/>
+
+    <section aura:id="popup" class="slds-popover slds-nubbin_left slds-hidden" role="dialog">
         <div class="slds-popover__body">
             <lightning:layout >
             	<lightning:layoutItem >
@@ -42,5 +42,5 @@
             </lightning:layout>
         </div>
     </section>
-    
+
 </aura:component>
