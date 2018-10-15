@@ -69,9 +69,9 @@ This is the recommended option for non developers. Use this option if you want t
 
 1. [Sign up](https://developer.salesforce.com/signup) for a developer edition.
 
-1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1)
+1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036se6QAA) to install the DreamInvest unlocked package into your developer edition org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tXMQAY) to install the DreamInvest unlocked package into your developer edition org.
 
 1. Select **Install for All Users**.
 
@@ -80,7 +80,7 @@ This is the recommended option for non developers. Use this option if you want t
     - Click **Launch Wizard**.
     - Click the **Custom objects** tab, click **Sectors**, and click **Add New Records**.
     - Drag **sectors.csv** from the data folder of this project to the upload area.
-    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields. 
+    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields.
     - Click **Next**, and **Start Import**.
 
 1. Load sample data (Funds):
@@ -89,7 +89,7 @@ This is the recommended option for non developers. Use this option if you want t
     - Click the **Custom objects** tab, click **Funds**, and click **Add New Records**.
     - For Which Sector field in your file specifies the Master/Detail relationship?, select **Sector Id (External ID)**.
     - Drag **funds.csv** from the data folder of this project to the upload area.
-    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields. 
+    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields.
     - Click **Next**, and **Start Import**.
 
 ### Completing the installation
