@@ -2,16 +2,18 @@
     "packageDirectories": [
         {
             "path": "force-app",
+            "default": true,
             "package": "dreaminvest",
-            "versionName": "Summer '18",
-            "versionNumber": "2.0.0.NEXT"
+            "versionName": "Winter '19",
+            "versionNumber": "3.0.0.NEXT"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "43.0",
+    "sourceApiVersion": "44.0",
     "packageAliases": {
         "dreaminvest": "0Ho1I000000XZDQSA4",
-        "dreaminvest@2.0.0-1": "04t1I0000036se6QAA"
+        "dreaminvest@2.0.0-1": "04t1I0000036se6QAA",
+        "dreaminvest@3.0.0-1": "04t1I0000036tXMQAY"
     }
 }

@@ -1,8 +1,8 @@
 ({
 	loadFunds : function(component, page) {
         var action = component.get("c.getFunds");
-        action.setStorable();
-		var pageSize = component.get("v.pageSize");
+        //action.setStorable();
+        var pageSize = component.get("v.pageSize");
 		action.setParams({
       		"filters": JSON.stringify(component.get("v.filterObject")),
             "pageSize": pageSize,

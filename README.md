@@ -24,30 +24,44 @@ This is the recommended installation option for developers who want to experienc
     sfdx force:auth:web:login -d -a myhuborg
     ```
 
-1. Clone the dreaminvest repository:
-    ```
+1.  Clone this repository:
+
+    ```zsh
     git clone https://github.com/trailheadapps/dreaminvest
     cd dreaminvest
     ```
 
-1. Create a scratch org and provide it with an alias (nto):
-    ```
+1.  Create a scratch org and provide it with an alias (dreaminvest):
+
+    ```zsh
     sfdx force:org:create -s -f config/project-scratch-def.json -a dreaminvest
     ```
 
-1. Push the app to your scratch org:
-    ```
+1.  Push the app to your scratch org:
+
+    ```zsh
     sfdx force:source:push
     ```
 
-1. Assign the dreaminvest permission set to the default user:
-    ```
+1.  Assign the dreaminvest permission set to the default user:
+
+    ```zsh
     sfdx force:user:permset:assign -n dreaminvest
     ```
 
-1. Open the scratch org:
+1. Upload Sector data:
+    ```zsh
+    sfdx force:data:bulk:upsert -s Sector__c -f ./data/sectors.csv -w 1 -i Sector_Id__c
     ```
-    sfdx force:org:open
+
+1. Upload Fund data:
+    ```zsh
+    sfdx force:data:bulk:upsert -s Fund__c -f ./data/funds.csv -w 1 -i Id
+    ```
+
+1. Open the scratch org:
+    ```zsh
+    sfdx force:org:open -p /lightning/page/home
     ```
 
 ### Installing DreamInvest using an unlocked package
@@ -55,24 +69,19 @@ This is the recommended option for non developers. Use this option if you want t
 
 1. [Sign up](https://developer.salesforce.com/signup) for a developer edition.
 
-1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1)
+1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036se6QAA) to install the DreamInvest unlocked package into your developer edition org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tXMQAY) to install the DreamInvest unlocked package into your developer edition org.
 
 1. Select **Install for All Users**.
-
-### Completing the installation
-
-Follow the steps below to complete the installation regardless of the installation option you selected above:
-
-1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
 
 1. Load sample data (Sectors):
     - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
     - Click **Launch Wizard**.
     - Click the **Custom objects** tab, click **Sectors**, and click **Add New Records**.
     - Drag **sectors.csv** from the data folder of this project to the upload area.
-    - Click **Next**, **Next**, and **Start Import**.
+    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields.
+    - Click **Next**, and **Start Import**.
 
 1. Load sample data (Funds):
     - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
@@ -80,7 +89,14 @@ Follow the steps below to complete the installation regardless of the installati
     - Click the **Custom objects** tab, click **Funds**, and click **Add New Records**.
     - For Which Sector field in your file specifies the Master/Detail relationship?, select **Sector Id (External ID)**.
     - Drag **funds.csv** from the data folder of this project to the upload area.
-    - Click **Next**, **Next**, and **Start Import**.
+    - Click **Next**. Use the mapping wizard to map any unmapped fields. The source CSV shows the API names of the fields.
+    - Click **Next**, and **Start Import**.
+
+### Completing the installation
+
+Follow the steps below to complete the installation regardless of the installation option you selected above:
+
+1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
 
 1. In **App Launcher**, select the **DreamInvest** app
 

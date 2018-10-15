@@ -31,6 +31,7 @@
     
     fundFilterChangeHandler: function(component, event, helper) {
         var filterObject = component.get("v.filterObject");
+        console.log(filterObject);
         if (event.getParam("searchKey") !== undefined) {
 	        filterObject.searchKey = event.getParam("searchKey");
         }
@@ -38,7 +39,6 @@
             filterObject.assetClass = event.getParam("assetClass");
         }
         if (event.getParam("sector") !== undefined) {
-            var sector = event.getParam("sector");
 	        filterObject.sector = event.getParam("sector");
         }
         helper.loadFunds(component);

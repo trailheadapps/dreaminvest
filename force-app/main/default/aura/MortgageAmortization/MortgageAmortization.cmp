@@ -1,0 +1,74 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <ltng:require scripts="{!$Resource.mortgageService}" />
+
+    <aura:attribute name="principal" type="Integer" default="200000" access="global" />
+    <aura:attribute name="years" type="Integer" default="30" access="global" />
+    <aura:attribute name="rate" type="Integer" default="5" access="global" />
+    <aura:attribute name="monthlyPayment" type="Decimal" />
+    <aura:attribute name="amortization" type="Object[]" />
+
+    <lightning:card title="Mortgage Amortization" iconName="custom:custom57">
+
+        <lightning:layout verticalAlign="end">
+            <lightning:layoutItem>
+                <lightning:input aura:id="principal" type="number" label="Principal:" value="{!v.principal}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:select name="select1" label="Years:" value="{!v.years}">
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                </lightning:select>
+            </lightning:layoutItem>
+            <lightning:layoutItem>
+                <lightning:input aura:id="rate" type="text" label="Rate:" value="{!v.rate}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <lightning:button label="Calculate" onclick="{!c.calculate}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+
+        <div class="result">
+            Monthly Payment: 
+            <lightning:formattedNumber value="{!v.monthlyPayment}" style="currency" currencyCode="USD"/>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th class="principal">Principal</th>
+                    <th class="stretch"></th>
+                    <th class="interest">Interest</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.amortization}" var="year" indexVar="index">
+                    <tr>
+                        <td>{!index + 1}</td>
+                        <td class="principal">
+                            <ui:outputCurrency value="{!year.principalY}" format="$#,###" />
+                        </td>
+                        <td class="stretch">
+                            <div class="flex">
+                                <div class="bar principal" style="{!'flex:'+year.principalY+';-webkit-flex:'+year.principalY}"></div>
+                                <div class="bar interest" style="{!'flex:'+year.interestY+';-webkit-flex:'+year.interestY}"></div>
+                            </div>
+                        </td>
+                        <td class="interest">
+                            <ui:outputCurrency value="{!year.interestY}" format="$#,###" />
+                        </td>
+                        <td>
+                            <ui:outputCurrency value="{!year.balance}" format="$#,##0" />
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+
+    </lightning:card>
+
+</aura:component>
