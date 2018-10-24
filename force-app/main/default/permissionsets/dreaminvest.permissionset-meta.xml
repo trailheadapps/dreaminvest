@@ -81,4 +81,20 @@
         <tab>Sector__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <tabSettings>
+        <tab>Loans</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+        <tabSettings>
+        <tab>Quotes</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Sector_List</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Trader_Desktop</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
