@@ -71,7 +71,7 @@ This is the recommended option for non developers. Use this option if you want t
 
 1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tXMQAY) to install the DreamInvest unlocked package into your developer edition org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036toLQAQ) to install the DreamInvest unlocked package into your developer edition org.
 
 1. Select **Install for All Users**.
 
@@ -94,9 +94,11 @@ This is the recommended option for non developers. Use this option if you want t
 
 ### Completing the installation
 
-Follow the steps below to complete the installation regardless of the installation option you selected above:
+Follow the steps below to complete the installation regardless of the installation option you selected above. If you want to experience the StockService.cmp you have to obtain a free API key from [Alphavantage](https://www.alphavantage.co/support/#api-key):
 
-1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select Activate.
+1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, click the down arrow to the right of the **Lightning Lite** theme and select **Activate**.
+
+1. In **Setup** type **custom settings** in the quick find box. Click **Custom Settings**, click **Manage** besides **DreamInvest Settings**. Then click **New** (top button), and enter the Alphavantage API key. Click **Save**.
 
 1. In **App Launcher**, select the **DreamInvest** app
 
