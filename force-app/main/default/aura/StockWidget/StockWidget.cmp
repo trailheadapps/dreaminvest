@@ -2,6 +2,9 @@
 
     <ltng:require scripts="{!join(',', $Resource.config, $Resource.stockService)}" />
 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:attribute name="apiKey" type="String" />
     <aura:attribute name="stock" type="Object" />
     <aura:attribute name="symbol" type="String" />
 

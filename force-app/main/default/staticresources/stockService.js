@@ -1,7 +1,6 @@
 window.stockService = (function() {
 
-    let getStock = (symbol) => {
-        const apiKey = config.stockAPI;
+    let getStock = (apiKey, symbol) => {
         return fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`)
             .then(function (response) {
                 return response.json();
