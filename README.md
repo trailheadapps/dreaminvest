@@ -1,4 +1,8 @@
-# DreamInvest Sample App
+# DreamInvest Aura Sample Application
+
+> IMPORTANT: This is the Aura version of the DreamInvest sample application. If you are looking for the new Lightning Web Components version, click [here](https://github.com/trailheadapps/dreaminvest-lwc).
+
+![dreaminvest-logo](dreaminvest-logo.png)
 
 [![CircleCI](https://circleci.com/gh/trailheadapps/dreaminvest.svg?style=svg)](https://circleci.com/gh/trailheadapps/dreaminvest)
 
